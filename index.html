@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional Cristhian Andres Ariza Cadena</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #154360 ;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Tab Styles */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .tabs button {
+            background-color: #839192;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .tabs button:hover {
+            background-color: #154360 ;
+        }
+
+        .tabs button.active {
+            background-color: #154360 ;
+            color: white;
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            font-size: 1rem;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            font-size: 1.8rem;
+            color: #1c2833  ;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #1a5276   ;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Cristhian Andres Ariza Cadena</h1>
+        <p>Estudiante de Ingenieria de Software</p>
+    </header>
+
+    <!-- Tab Navigation -->
+    <div class="tabs">
+        
+        <button class="tab-button" onclick="openTab(event, 'personal')">Información Personal</button>
+		<button class="tab-button active" onclick="openTab(event, 'profile')">Perfil Profesional</button>
+        <button class="tab-button" onclick="openTab(event, 'skills')">Competencias</button>
+        <button class="tab-button" onclick="openTab(event, 'experience')">Experiencia Laboral</button>
+        <button class="tab-button" onclick="openTab(event, 'education')">Formación</button>
+        <button class="tab-button" onclick="openTab(event, 'references')">Referencias</button>
+    </div>
+
+    <!-- Tab Contents -->
+    <div class="container">
+         <!-- Información Personal -->
+        <div id="personal" class="tab-content">
+            <div class="section">
+                <img src="imagenes/fotoperfil.jpg" alt="fotoperfil" class="imagen-seccion">
+                <div>
+                    <h2>Cristhian Andres Ariza Cadena</h2>
+                    <p><strong>Email:</strong> <a href="mailto:tuemail@ejemplo.com">candresariza@ucompensar.edu.co</a></p>
+                    <p><strong>Teléfono:</strong> +57 310 456 7891</p>
+                    <p><strong>LinkedIn:</strong> <a  target="_blank">linkedin.com/in/Cristhianariza</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Perfil Profesional  -->
+        
+		
+		<div id="profile" class="tab-content active">
+            <div class="profile">	
+                <h3></h3>
+                <p>Soy estudiante de Ingeniería de Software, apasionado por las nuevas tecnologías y la creación de experiencias digitales innovadoras. Me motiva continuar aprendiendo y aplicar mis habilidades en proyectos desafiantes que impulsen mi desarrollo profesional.
+
+</p>
+            </div>
+        </div>
+
+        <!-- Competencias -->
+        <div id="skills" class="tab-content">
+            <div class="section">
+                <h3>Competencias</h3>
+                <ul>
+                    <li>Conocimiento básicos en
+lenguajes de programación como Java y C++.</li>
+                    <li>Conocimiento básico en Base de Datos: SQL</li>
+                    <li>Comunicación y Trabajo en Equipo</li>
+                    <li>Manejo intermedio de herramientas ofimáticas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experiencia Laboral -->
+        <div id="experience" class="tab-content">
+            <div class="section">
+                <h3>Experiencia Laboral</h3>
+                <p><strong>Practicante Técnico Ingenieria de Software </strong> - Vidrios Boyaca (Junio 2024 - Diciembre2024)</p>
+                <p>Desarrollé una propuesta y un plan de trabajo para la creación de un software orientado a centralizar información clave, incluyendo datos de clientes, proveedores, productos y pedidos. El objetivo principal fue implementar un sistema sostenible que garantizara la disponibilidad continua y organizada de los datos a lo largo del tiempo, optimizando la gestión de la información y mejorando la toma de decisiones empresariales.</p>
+                
+            </div>
+        </div>
+
+        <!-- Formación -->
+        <div id="education" class="tab-content">
+            <div class="section">
+                <h3>Formación</h3>
+                <p><strong>Ingeniería de Software</strong> - Universidad Compensar  (Presente)</p>
+                <p><strong>Corporación Educativa Colegio José Antonio Galán</strong> - Instituto Creativo (2004 - 2009)</p>
+                      
+                
+            </div>
+        </div>
+    
+
+        <!-- Referencias -->
+        <div id="references" class="tab-content">
+            <div class="section">
+                <h3>Referencias Profesionales </h3>
+                <p><strong>Juan Andres Cardenas</strong>, Administrador Vidrios Boyaca </p>
+                <p><strong>Teléfono:</strong> +57 312 487 7891</p>
+                <p><strong>Email:</strong> <a href="mailto:tuemail@ejemplo.com">vidriosboyaca@gmail.com</a></p>
+              
+              
+                
+                 <h3>Referencias Personales </h3>
+                <p><strong>Lizeth Juliana Sandoval</strong>, Amiga</p>
+                 <p><strong>Teléfono:</strong> +57 318 456 8891</p>
+                <p><strong>Email:</strong> <a href="mailto:tuemail@ejemplo.com">lizeth.sandoval@gmail.com</a></p>
+                
+                
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>
